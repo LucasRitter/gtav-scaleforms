@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+        <ProjectGuid>{294CA351-B6AC-4E6F-8F4B-30E9FF328707}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>LucasRitter.Scaleforms</RootNamespace>
+        <AssemblyName>LucasRitter.Scaleforms</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SHVDN Debug|x64' ">
+      <OutputPath>bin\x64\SHVDN Debug\</OutputPath>
+      <PlatformTarget>x64</PlatformTarget>
+      <DefineConstants>SHVDN;DEBUG;TRACE</DefineConstants>
+      <DebugSymbols>true</DebugSymbols>
+      <DebugType>full</DebugType>
+      <AssemblyName>LucasRitter.Scaleforms.SHVDN</AssemblyName>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RPH1 Debug|x64' ">
+      <DefineConstants>RPH1;DEBUG;TRACE</DefineConstants>
+      <DebugSymbols>true</DebugSymbols>
+      <DebugType>full</DebugType>
+      <OutputPath>bin\x64\RPH1 Debug\</OutputPath>
+      <PlatformTarget>x64</PlatformTarget>
+      <AssemblyName>LucasRitter.Scaleforms.RPH1</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Microsoft.CSharp" />
+        <Reference Include="RagePluginHook, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>deps\RagePluginHookSDK.dll</HintPath>
+          <Private>True</Private>
+          <Aliases>rph1</Aliases>
+        </Reference>
+        <Reference Include="ScriptHookVDotNet2, Version=2.10.9.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>packages\ScriptHookVDotNet2.2.10.9\lib\net40\ScriptHookVDotNet2.dll</HintPath>
+          <Private>True</Private>
+          <Aliases>shvdn</Aliases>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Common.cs" />
+        <Compile Include="Natives.cs" />
+        <Compile Include="Scaleform.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Scaleforms\Generic\Binoculars.cs" />
+        <Compile Include="Scaleforms\Generic\Dashboard.cs" />
+        <Compile Include="Scaleforms\Generic\HeliCam.cs" />
+        <Compile Include="Scaleforms\Generic\WindMeter.cs" />
+        <Compile Include="Scaleforms\Generic\YachtName.cs" />
+        <Compile Include="Scaleforms\Generic\YachtNameStern.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

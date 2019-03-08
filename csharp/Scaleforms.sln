@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaleforms", "Scaleforms.csproj", "{294CA351-B6AC-4E6F-8F4B-30E9FF328707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scaleforms.Tests.RPH1", "tests\rph1\Scaleforms.Tests.RPH1.csproj", "{AFA07E4A-E3C7-48E9-9E5F-14F0ABF4FDAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		SHVDN Debug|x64 = SHVDN Debug|x64
+		RPH1 Debug|x64 = RPH1 Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{294CA351-B6AC-4E6F-8F4B-30E9FF328707}.SHVDN Debug|x64.ActiveCfg = SHVDN Debug|x64
+		{294CA351-B6AC-4E6F-8F4B-30E9FF328707}.SHVDN Debug|x64.Build.0 = SHVDN Debug|x64
+		{294CA351-B6AC-4E6F-8F4B-30E9FF328707}.RPH1 Debug|x64.ActiveCfg = RPH1 Debug|x64
+		{294CA351-B6AC-4E6F-8F4B-30E9FF328707}.RPH1 Debug|x64.Build.0 = RPH1 Debug|x64
+		{AFA07E4A-E3C7-48E9-9E5F-14F0ABF4FDAF}.SHVDN Debug|x64.ActiveCfg = Debug|Any CPU
+		{AFA07E4A-E3C7-48E9-9E5F-14F0ABF4FDAF}.SHVDN Debug|x64.Build.0 = Debug|Any CPU
+		{AFA07E4A-E3C7-48E9-9E5F-14F0ABF4FDAF}.RPH1 Debug|x64.ActiveCfg = Debug|Any CPU
+		{AFA07E4A-E3C7-48E9-9E5F-14F0ABF4FDAF}.RPH1 Debug|x64.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

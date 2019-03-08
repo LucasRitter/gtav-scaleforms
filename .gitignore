@@ -1,0 +1,9 @@
+# IntelliJ
+.idea/
+
+# C#
+bin/
+deps/
+obj/
+packages/
+*.DotSettings*
